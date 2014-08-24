@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="format-detection" content="telephone=no" />
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css" />
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<!--		lo que sirver xDDD											-->
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
+		<script src="http://www.parsecdn.com/js/parse-1.2.19.min.js"></script>
+		<script type="text\javascript" src="cordova.js"></script>
+		<script src="js/index.js"></script>
+        <title>Aplicacion</title>
+		
+			<style>			
+				#Inicio{
+						background-image: url('img/minecraft.png'); 
+						background-size: 100% 100%;
+						background-attachment: fixed;
+						
+					}
+				
+				.page-header{
+								margin-top: auto;
+								opacity: 0.8;
+							}
+			</style>
+			
+    </head>
+    <body>
+        
+		<div data-role="page" id="Inicio">
+		
+		<div class="page-header">
+				<span class="label label-default">Bienvenido a MINECRAFT-FIGURES</span>
+			<nav class="navbar navbar-default" role="navigation">
+				
+				<div class="collapse´ navbar-collapse" id="prueba">
+				<ul class="nav navbar-nav">
+				<li><a href="#Agregar">AGREGAR</a></li>		
+				<li><a href="#Galeria">GALERIA</a></li>
+				</ul>
+				</div>
+			</nav>
+			</div>
+		<div data-role="content" id="entrada">
+		
+		</div>
+		</div>
+		
+		<!-- Inicio de la pagina de GALERIA -->
+		<div data-role="page" id="Galeria">
+		
+			<!--<div data-role="header">
+				<h1>GALERIA</h1>
+				<div data-role="navbar">
+				<ul>
+					<li><a href="#Inicio">Inicio</a></li>
+				</ul>
+				</div>
+			</div> -->
+			<div class="page-header">
+				<span class="label label-default">Galeria de FIGURES</span>
+			<nav class="navbar navbar-default" role="navigation">
+				
+				<div class="collapse´ navbar-collapse" id="prueba">
+				<ul class="nav navbar-nav">
+				<li><a href="#Inicio">INICIO</a></li>
+				</ul>
+				</div>
+			</nav>
+			</div>
+			
+			<div data-role="content">
+				<div id="minecraftMovil"></div>
+			</div>
+			
+			<div data-role="footer">
+			<h1>MINECRAFT</h1>
+			</div>
+		</div>
+		
+		<!-- Inicio de la pagina AGREGAR -->
+		<div data-role="page" id="Agregar">
+		
+			<!--<div data-role="header">
+				<label for="basic">AGREGAR NUEVAS FIGURA</label>
+				<div data-role="navbar">
+				<ul>
+					<li><a href="#Inicio">Inicio</a></li>
+				</ul>
+				</div>
+			</div> -->
+			<div class="page-header">
+				<span class="label label-default">Agregar una nueva FIGURE</span>
+			<nav class="navbar navbar-default" role="navigation">
+				
+				<div class="collapse´ navbar-collapse" id="prueba">
+				<ul class="nav navbar-nav">
+				<li><a href="#Inicio">INICIO</a></li>
+				</ul>
+				</div>
+			</nav>
+			</div>
+			
+			<div data-role="content">
+				<label for="basic">NOMBRE</label>
+				<textarea id="tbxNombre"></textarea>
+				<label for="basic">DESCRIPCION</label>
+				<textarea id="tbxDescripcion"></textarea>
+				<button id="btnImagen">Agregar Imagen</button>
+				<!--<input id="btnImagen"type="button" value="AGREGAR" /> -->
+				<button id="btnGuardar">Guardar Figura</button>
+			</div>
+			
+		</div>
+    </body>
+</html>
